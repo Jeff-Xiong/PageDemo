@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+
+.paramTable {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.paramTable td {
+    padding: 5px;
+}
+
+#queryBtn {
+    width: 80px;
+}
+
+.dataTable {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.paramTable td {
+    padding: 5px;
+}
+
+.dataTable th {
+    background-color: #2F5496;
+    color: #FFF;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #B4C6E7;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataTable tbody td {
+    border: 1px solid #E7E6E6;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 30px;
+}
+
+.dataTable tbody tr:nth-child(odd) td {
+    background: #fff;
+}
+
+.dataTable tbody tr:nth-child(even) td {
+    background: #F4F5F8;
+}
+
+.dataTable tfoot td {
+    height: 40px;
+}
+
+#pageNum {
+    width: 50px;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.mask .back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.02;
+    filter: Alpha(opacity=2);
+}
+
+.mask .tips {
+    position: absolute;
+    text-align: center;
+    top: 225px;
+    left: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    color:#2F5496;
+    width: 150px;
+    margin-left: -75px;
+    text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+}
+
+
+/* css3 的动态loading效果 */
+
+.loading {
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    text-align: center;
+    top: 250px;
+    left: 50%;
+    margin-left: -75px;
+}
+
+.loading span {
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #2F5496;
+    animation: load 1.04s ease infinite;
+}
+
+.loading span:last-child {
+    margin-right: 0px;
+}
+
+@keyframes load {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.loading span:nth-child(1) {
+    animation-delay: 0.13s;
+}
+
+.loading span:nth-child(2) {
+    animation-delay: 0.26s;
+}
+
+.loading span:nth-child(3) {
+    animation-delay: 0.39s;
+}
+
+.loading span:nth-child(4) {
+    animation-delay: 0.52s;
+}
+
+.loading span:nth-child(5) {
+    animation-delay: 0.65s;
+}
